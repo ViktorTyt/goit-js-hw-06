@@ -1,4 +1,4 @@
-const showsInfoOfCategories = function () {
+const showInfoOfCategories = function () {
   const categoriesItemEl = document.querySelectorAll(".item");
   const NumberOfCategories = categoriesItemEl.length;
 
@@ -9,4 +9,4 @@ const showsInfoOfCategories = function () {
     console.log(`Elements: ${item.lastElementChild.children.length}`);
   }
 };
-showsInfoOfCategories();
+showInfoOfCategories();
