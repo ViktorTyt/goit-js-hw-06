@@ -5,4 +5,5 @@ const handleTargetInputBlur = (event) => {
     ? (inputEl.className = "valid")
     : (inputEl.className = "invalid");
 };
-inputEl.addEventListener("blur", handleTargetInputBlur);
+
+const checkInput = inputEl.addEventListener("blur", handleTargetInputBlur);

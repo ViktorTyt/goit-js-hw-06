@@ -13,26 +13,18 @@ const images = [
   },
 ];
 
-// const createGallery = (args) => {
-//   const galleryEl = document.querySelector(".gallery");
-//   const arrayOfImages = [];
-//   args.map((arg) => {
-//     const image = document.createElement("img");
-//     image.src = arg.url;
-//     image.alt = arg.alt;
-//     arrayOfImages.push(image);
-//   });
-//   galleryEl.append(...arrayOfImages);
-// };
-// createGallery(images);
-
 const createGallery = (args) => {
   const galleryEl = document.querySelector(".gallery");
+
   const arrayOfImages = [];
+
   const image = args
     .map((arg) => `<img src="${arg.url}" alt="${arg.alt}"/>`)
     .join("");
+
   arrayOfImages.push(image);
+
   galleryEl.insertAdjacentHTML("afterbegin", arrayOfImages);
 };
+
 createGallery(images);

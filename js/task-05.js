@@ -1,9 +1,12 @@
-const enterTextEl = document.querySelector("#name-input");
-const outputTextEl = document.querySelector("#name-output");
+const refs = {
+  enterText: document.querySelector("#name-input"),
+  outputText: document.querySelector("#name-output"),
+};
 
 const handleInput = (event) => {
   event.target.value !== ""
-    ? (outputTextEl.textContent = event.target.value)
-    : (outputTextEl.textContent = "Anonymous");
+    ? (refs.outputText.textContent = event.target.value)
+    : (refs.outputText.textContent = "Anonymous");
 };
-enterTextEl.addEventListener("input", handleInput);
+
+const getTextFromInput = refs.enterText.addEventListener("input", handleInput);

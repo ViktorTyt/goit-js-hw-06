@@ -16,9 +16,8 @@ const handleFormSubmit = (event) => {
     formData.mail = mail;
     formData.password = password;
     console.log(formData);
+    event.currentTarget.reset();
   }
-
-  event.currentTarget.reset();
 };
 
-formEl.addEventListener("submit", handleFormSubmit);
+const setForm = formEl.addEventListener("submit", handleFormSubmit);
