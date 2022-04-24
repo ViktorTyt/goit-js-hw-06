@@ -15,7 +15,4 @@ const handleTargetButtonClick = () => {
   refs.body.style = `background-color: ${refs.colorText.textContent}`;
 };
 
-const showRandomHexColor = refs.btn.addEventListener(
-  "click",
-  handleTargetButtonClick
-);
+refs.btn.addEventListener("click", handleTargetButtonClick);

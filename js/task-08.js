@@ -20,4 +20,4 @@ const handleFormSubmit = (event) => {
   }
 };
 
-const setForm = formEl.addEventListener("submit", handleFormSubmit);
+formEl.addEventListener("submit", handleFormSubmit);

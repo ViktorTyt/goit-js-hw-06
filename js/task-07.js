@@ -7,4 +7,4 @@ const handleInput = (event) => {
   refs.text.style.fontSize = `${event.target.value}px`;
 };
 
-const changeTextSize = refs.input.addEventListener("input", handleInput);
+refs.input.addEventListener("input", handleInput);

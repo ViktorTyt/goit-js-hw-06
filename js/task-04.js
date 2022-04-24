@@ -14,11 +14,5 @@ const handleClickDecr = () => {
   refs.counterTextValue.textContent = counterValue -= 1;
 };
 
-const makeIncrement = refs.btnIncrement.addEventListener(
-  "click",
-  handleClickIncr
-);
-const makeDecrement = refs.btnDecrement.addEventListener(
-  "click",
-  handleClickDecr
-);
+refs.btnIncrement.addEventListener("click", handleClickIncr);
+refs.btnDecrement.addEventListener("click", handleClickDecr);

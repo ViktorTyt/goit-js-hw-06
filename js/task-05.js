@@ -4,9 +4,11 @@ const refs = {
 };
 
 const handleInput = (event) => {
+  const DEFAULT_VALUE = "Anonymous";
+
   event.target.value !== ""
     ? (refs.outputText.textContent = event.target.value)
-    : (refs.outputText.textContent = "Anonymous");
+    : (refs.outputText.textContent = DEFAULT_VALUE);
 };
 
-const getTextFromInput = refs.enterText.addEventListener("input", handleInput);
+refs.enterText.addEventListener("input", handleInput);
